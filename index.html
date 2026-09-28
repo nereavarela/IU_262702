@@ -38,30 +38,30 @@
 			<br>
 			
 			<label class="label_apellidos_persona">apellidos</label>
-			<input type='text' id='apellidos_persona' name='apellidos_persona'></input>
+			<input type='text' id='apellidos_persona' name='apellidos_persona' onblur="return entidad.ADD_apellidos_persona_validation();"></input>
 			<span id="span_error_apellidos_persona" ><a id="error_apellidos_persona"></a></span>
 			<br>
 			
 			<label class="label_fechaNacimiento_persona">Fecha de Nacimiento</label>
-			<input type='text' id='fechaNacimiento_persona' name='fechaNacimiento_persona'></input>
+			<input type='text' id='fechaNacimiento_persona' name='fechaNacimiento_persona' onblur="return entidad.ADD_fechaNacimiento_persona_validation();"></input>
 			<span id="span_error_fechaNacimiento_persona" ><a id="error_fechaNacimiento_persona"></a></span>
-			
 			<br>
+			
 			<label class="label_direccion_persona">Dirección Postal</label>
-			<textarea rows="5" cols="33" type='text' id='direccion_persona' name='direccion_persona'></textarea>
+			<textarea rows="5" cols="33" type='text' id='direccion_persona' name='direccion_persona' onblur="return entidad.ADD_direccion_persona_validation();"></textarea>
 			<span id="span_error_direccion_persona" ><a id="error_direccion_persona"></a></span>
 			<br>
 
 			<label class="label_telefono_persona">Teléfono Persona</label>
-			<input type='text' id='telefono_persona' name='telefono_persona'></input>
+			<input type='text' id='telefono_persona' name='telefono_persona' onblur="return entidad.ADD_telefono_persona_validation()"></input>
 			<span id="span_error_telefono_persona" ><a id="error_telefono_persona"></a></span>
-			
 			<br>
-			<label class="label_email_persona">Correo Electronico</label>
-			<input type='text' id='email_persona' name='email_persona'></input>
-			<span id="span_error_email_persona" ><a id="error_email_persona"></a></span>
 
+			<label class="label_email_persona">Correo Electronico</label>
+			<input type='text' id='email_persona' name='email_persona' onblur="return entidad.ADD_email_persona_validation()"></input>
+			<span id="span_error_email_persona" ><a id="error_email_persona"></a></span>
 			<br>
+			
 			<label id="label_foto_persona" class="label_foto_persona">Foto Persona</label>
 			<input type='text' id='foto_persona' name='foto_persona'></input>
 			<span id="span_error_foto_persona"><a id="error_foto_persona"></a></span>
@@ -70,6 +70,61 @@
 			<label id="label_nuevo_foto_persona" class="label_nuevo_foto_persona">Nueva Foto Persona</label>
 			<input type='file' id='nuevo_foto_persona' name='nuevo_foto_persona'></input>
 			<span id="span_error_nuevo_foto_persona"><a id="error_nuevo_foto_persona"></a></span>
+			<br>
+			
+			<label class="label_id_accion_persona">ID Acción</label>
+			<input type='text' id='id_accion_persona' name='id_accion_persona' onblur="return entidad.ADD_id_accion_persona_validation()"></input>
+			<span id="span_error_id_accion_persona" ><a id="error_id_accion_persona"></a></span>
+			<br>
+
+			<label class="label_nombre_accion_persona">Nombre Acción</label>
+			<input type='text' id='nombre_accion_persona' name='nombre_accion_persona' onblur="return entidad.ADD_nombre_accion_persona_validation()"></input>
+			<span id="span_error_nombre_accion_persona" ><a id="error_nombre_accion_persona"></a></span>
+			<br>
+
+			<label class="label_descrip_accion_persona">Descripción Acción</label>
+			<textarea rows="5" cols="33" type='text' id='descrip_accion_persona' name='descrip_accion_persona' onblur="return entidad.ADD_descrip_accion_persona_validation()"></textarea>
+			<span id="span_error_descrip_accion_persona" ><a id="error_descrip_accion_persona"></a></span>
+			<br>
+
+			<label class="label_id_funcionalidad_persona">ID Funcionalidad</label>
+			<input type='text' id='id_funcionalidad_persona' name='id_funcionalidad_persona' onblur="return entidad.ADD_id_funcionalidad_persona_validation()"></input>
+			<span id="span_error_id_funcionalidad_persona" ><a id="error_id_funcionalidad_persona"></a></span>
+			<br>
+
+			<label class="label_nombre_funcionalidad_persona">Nombre Funcionalidad</label>
+			<input type='text' id='nombre_funcionalidad_persona' name='nombre_funcionalidad_persona' onblur="return entidad.ADD_nombre_funcionalidad_persona_validation()"></input>
+			<span id="span_error_nombre_funcionalidad_persona" ><a id="error_nombre_funcionalidad_persona"></a></span>
+			<br>
+
+			<label class="label_descrip_funcionalidad_persona">Descripción Funcionalidad</label>
+			<textarea rows="5" cols="33" type='text' id='descrip_funcionalidad_persona' name='descrip_funcionalidad_persona' onblur="return entidad.ADD_descrip_funcionalidad_persona_validation()"></textarea>
+			<span id="span_error_descrip_funcionalidad_persona" ><a id="error_descrip_funcionalidad_persona"></a></span>
+			<br>
+
+			<label class="label_id_rol_persona">ID Rol</label>
+			<input type='text' id='id_rol_persona' name='id_rol_persona' onblur="return entidad.ADD_id_rol_persona_validation()"></input>
+			<span id="span_error_id_rol_persona" ><a id="error_id_rol_persona"></a></span>
+			<br>
+
+			<label class="label_rol_name_persona">Rol Name</label>
+			<input type='text' id='rol_name_persona' name='rol_name_persona' onblur="return entidad.ADD_rol_name_persona_validation()"></input>
+			<span id="span_error_rol_name_persona" ><a id="error_rol_name_persona"></a></span>
+			<br>
+
+			<label class="label_rol_description_persona">Rol Descripción</label>
+			<textarea rows="5" cols="33" type='text' id='rol_description_persona' name='rol_description_persona' onblur="return entidad.ADD_rol_description_persona_validation()"></input>
+			<span id="span_error_" ><a id="error_"></a></span>
+			<br>
+
+			<label class="label_usuario_persona">Usuario</label>
+			<input type='text' id='usuario_persona' name='usuario_persona' onblur="return entidad.ADD_usuario_persona_validation()"></input>
+			<span id="span_error_usuario_persona" ><a id="error_usuario_persona"></a></span>
+			<br>
+
+			<label class="label_contrasena_persona">Contraseña</label>
+			<input type='text' id='contrasena_persona' name='contrasena_persona' onblur="return entidad.ADD_contrasena_persona_validation()"></input>
+			<span id="span_error_contrasena_persona" ><a id="error_contrasena_persona"></a></span>
 			<br>
 
 			<input id="submit_button" type="submit" value="Submit">
